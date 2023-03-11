@@ -1,0 +1,97 @@
+.video{
+    display: flex;
+    gap: 24px;
+}
+
+.content{
+    flex: 5;
+}
+
+.recommendations{
+    flex:2;
+}
+
+.video-title{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.video-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-info{
+    color: #aaaaaa;
+}
+
+.video-buttons{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+hr{
+    margin: 15px 0px;
+    border: 0.5px solid #373737;
+}
+
+.channel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.channelInfo{
+    display: flex;
+    gap: 20px;
+}
+
+.channelInfo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.channel-detail{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.channel-name{
+    font-weight: 500;
+}
+
+.channel-counter{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.description{
+    font-size: 14px;
+}
+
+.subs-btn{
+    background-color: #cc1a00;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: max-content;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+

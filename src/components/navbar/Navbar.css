@@ -1,0 +1,40 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: #202020;
+    height: 56px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.search{
+    width: 40%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+.nav-btn{
+    margin-top: 0 !important;
+}
