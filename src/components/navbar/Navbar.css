@@ -38,3 +38,18 @@
 .nav-btn{
     margin-top: 0 !important;
 }
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+.user img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #999;
+}

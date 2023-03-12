@@ -18,8 +18,12 @@ import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 // import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
 import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 const Menu = () => {
+
+  const { currentUser } = useSelector((state) => state.user);
+
   return (
     <div className='menu'>
       <div className="items">
@@ -30,20 +34,26 @@ const Menu = () => {
           </div>
         </Link>
 
-        <div className="item">
-          <HomeIcon />
-          Home
-        </div>
+        <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+          <div className="item">
+            <HomeIcon />
+            Home
+          </div>
+        </Link>
 
-        <div className="item">
-          <ExploreOutlinedIcon />
-          Explore
-        </div>
+        <Link to="trends" style={{ textDecoration: "none", color: "inherit" }}>
+          <div className="item">
+            <ExploreOutlinedIcon />
+            Explore
+          </div>
+        </Link>
 
-        <div className="item">
-          <SubscriptionsOutlinedIcon />
-          Subcriptions
-        </div>
+        <Link to="subscriptions" style={{ textDecoration: "none", color: "inherit" }}>
+          <div className="item">
+            <SubscriptionsOutlinedIcon />
+            Subcriptions
+          </div>
+        </Link>
 
         <hr />
 
@@ -59,7 +69,7 @@ const Menu = () => {
 
         <hr />
 
-        <div className="login">
+        {!currentUser && <> <div className="login">
           Sign in to like videos, comment, and subscribe.
           <Link to="signin" style={{ textDecoration: "none" }}>
             <div>
@@ -69,11 +79,11 @@ const Menu = () => {
               </button>
             </div>
           </Link>
-
         </div>
 
-        <hr />
-
+          <hr />
+        </>
+        }
         <div className="title">BEST OF VIDEO TUBE</div>
 
         <div className="item">
